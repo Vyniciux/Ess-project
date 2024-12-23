@@ -47,3 +47,12 @@ Feature: Página Inicial
         When o usuário seleciona a opção "Perfil" no menu lateral
         Then o sistema redireciona o usuário para a página "Perfil"
         And exibe as informações pessoais de "Mariana", como nome, foto, playlists criadas e configurações.
+    
+    Scenario: Usuário recarrega as recomendações na Página Inicial
+        Given que o usuário "Pedro" está autenticado no aplicativo
+        And o usuário está na "Página Inicial"
+        And o sistema já exibiu uma lista de recomendações iniciais
+        When o usuário seleciona a opção "Recarregar Recomendações"
+        Then o sistema atualiza a lista de recomendações com base no histórico e preferências mais recentes do usuário
+        And exibe uma mensagem de confirmação: "Recomendações atualizadas com sucesso"
+        And o usuário visualiza as novas recomendações na tela
