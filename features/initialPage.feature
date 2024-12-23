@@ -40,3 +40,10 @@ Feature: Página Inicial
         When O usuário seleciona uma música específica
         Then O sistema inicia a reprodução da música selecionada
         And A música aparece no player localizado na parte inferior esquerda da tela
+
+    Scenario: Usuário acessa a página de perfil
+        Given que o usuário "Mariana" está autenticado no aplicativo
+        And que o usuário está na "Página Inicial"
+        When o usuário seleciona a opção "Perfil" no menu lateral
+        Then o sistema redireciona o usuário para a página "Perfil"
+        And exibe as informações pessoais de "Mariana", como nome, foto, playlists criadas e configurações.
