@@ -11,7 +11,7 @@ Feature: Visualizar e interagir com músicas na seção Em Alta
         And Cada música deve conter:O título da música, nome do artista e a capa do álbum (ou imagem associada)
     
     Scenario: Exibir mensagem quando não há músicas em alta
-        Given O usuário "Clara" acessa a seção "Em Alta"
+        Given O usuário "Bruna" acessa a seção "Em Alta"
         And Não existem músicas categorizadas como "Em Alta" no banco de dados
         When O sistema carrega a seção "Em Alta"
         Then O sistema exibe a mensagem "Nenhuma música em alta no momento"
