@@ -35,7 +35,7 @@ Feature: Página Inicial
         Then O sistema exibe uma lista de músicas mais populares
 
     Scenario: Reproduzir uma música diretamente da Página Inicial
-        Given O usuário "Ana" está na "Página Inicial"
+        Given O usuário "Poliana" está na "Página Inicial"
         And Uma música é exibida em qualquer uma das seções
         When O usuário seleciona uma música específica
         Then O sistema inicia a reprodução da música selecionada
