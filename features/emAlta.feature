@@ -4,7 +4,7 @@ Feature: Visualizar e interagir com músicas na seção Em Alta
     So that Eu possa ouvir e descobrir as músicas mais tocadas no momento 
 
     Scenario: Exibir músicas na seção "Em Alta" corretamente
-        Given O usuário "Paulo" está autenticado no sistema
+        Given O usuário "Midas" está autenticado no sistema
         And Existem músicas categorizadas como "Em Alta" no banco de dados
         When O usuário acessa a página inicial do aplicativo
         Then O sistema exibe a seção "Em Alta" com uma lista de músicas populares
