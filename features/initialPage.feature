@@ -39,4 +39,4 @@ Feature: Página Inicial
         And Uma música é exibida em qualquer uma das seções
         When O usuário seleciona uma música específica
         Then O sistema inicia a reprodução da música selecionada
-        And A música aparece no player localizado na parte inferior esquerda da tela
+        And A música aparece no player localizado na parte lateral da tela
