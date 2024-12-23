@@ -56,3 +56,10 @@ Feature: Página Inicial
         Then o sistema atualiza a lista de recomendações com base no histórico e preferências mais recentes do usuário
         And exibe uma mensagem de confirmação: "Recomendações atualizadas com sucesso"
         And o usuário visualiza as novas recomendações na tela
+
+    Scenario: Usuário acessa a biblioteca autenticado
+        Given o usuário "Pedro" está autenticado no aplicativo
+        And o usuário está na "Página Inicial"
+        When o usuário seleciona a opção "Biblioteca"
+        Then o usuário deve ser redirecionado para a página da biblioteca
+        And o sistema exibe as músicas, playlists e álbuns salvos pelo usuário
