@@ -49,7 +49,7 @@ Feature: Página Inicial
         And exibe as informações pessoais de "Mariana", como nome, foto, playlists criadas e configurações.
     
     Scenario: Usuário recarrega as recomendações na Página Inicial
-        Given que o usuário "Pedro" está autenticado no aplicativo
+        Given que o usuário "Peter Pan" está autenticado no aplicativo
         And o usuário está na "Página Inicial"
         And o sistema já exibiu uma lista de recomendações iniciais
         When o usuário seleciona a opção "Recarregar Recomendações"
